@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { buscar } from "../../../services/Service";
 import type Exercicio from "../../../models/Exercicio";
 import CardExercicio from "../cardexercicio/CardExercicio";
+import { ToastAlerta } from "../../../utils/ToastAlerta";
 
 function ListaExercicios() {
 
@@ -21,13 +22,19 @@ function ListaExercicios() {
         buscarExercicios();
     }, []);
 
+    useEffect(() => {
+        if (!isLoading && exercicios.length === 0) {
+            ToastAlerta("Nenhum exercício encontrado!", "info");
+        }
+    }, [isLoading, exercicios]);
+
     return (
         <div className="flex justify-center w-full my-4">
             <div className="container flex flex-col mx-2">
 
                 {isLoading && (
                     <div className="flex justify-center text-5xl animate-bounce my-8">
-                        🏋🏽‍♀️ 
+                        🏋🏽‍♀️
                     </div>
                 )}
 

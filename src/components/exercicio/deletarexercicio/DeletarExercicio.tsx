@@ -3,6 +3,7 @@ import { useNavigate, useParams, Link } from "react-router-dom";
 
 import type Exercicio from "../../../models/Exercicio";
 import { buscar, deletar } from "../../../services/Service";
+import { ToastAlerta } from "../../../utils/ToastAlerta";
 
 function DeletarExercicio() {
   const navigate = useNavigate();
@@ -27,14 +28,14 @@ function DeletarExercicio() {
   async function confirmarDelete() {
     try {
       await deletar(`/exercicios/${id}`);
-      alert("Exercício deletado com sucesso!");
+      ToastAlerta("Exercício deletado com sucesso!", "info");
       navigate("/exercicios");
     } catch (error) {
       console.log("Erro ao deletar exercício:", error);
-      alert("Erro ao deletar o exercício");
+      ToastAlerta("Erro ao deletar o exercício!", 'erro');
     }
   }
-
+  
   return (
     <div className="container w-1/3 mx-auto">
       <h1 className="text-4xl text-center my-4">Deletar Exercício</h1>

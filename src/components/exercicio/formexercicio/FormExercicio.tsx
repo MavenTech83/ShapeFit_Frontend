@@ -5,6 +5,7 @@ import { ClipLoader } from "react-spinners";
 import type Exercicio from "../../../models/Exercicio";
 import { atualizar, buscar, cadastrar } from "../../../services/Service";
 import type Categoria from "../../../models/Categoria";
+import { ToastAlerta } from "../../../utils/ToastAlerta";
 
 function FormExercicio() {
 
@@ -83,15 +84,15 @@ function FormExercicio() {
             if (id !== undefined) {
                 // EDITAR
                 await atualizar(`/exercicios`, exercicio, setExercicio);
-                alert('Exercício atualizado com sucesso!');
+                ToastAlerta('Exercício atualizado com sucesso!', 'info');
             } else {
                 // CADASTRAR
                 await cadastrar(`/exercicios`, exercicio, setExercicio);
-                alert('Exercício cadastrado com sucesso!');
+                ToastAlerta('Exercício cadastrado com sucesso!', 'info');
             }
         } catch (error) {
             console.log("Erro ao salvar exercício", error);
-            alert('Erro ao salvar exercício');
+            ToastAlerta('Erro ao salvar exercício', 'erro');
         }
 
         setIsLoading(false);
