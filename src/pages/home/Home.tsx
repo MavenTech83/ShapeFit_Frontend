@@ -1,3 +1,5 @@
+import ModalExercicio from "../../components/exercicio/modalexercicio/ModalExercicio"
+
 function Home() {
   return (
     <>
@@ -13,12 +15,7 @@ function Home() {
             </p>
 
             <div className='flex justify-around gap-4'>
-              <div className='rounded text-white
-                  border-white border-solid border-2 py-2 px-4'
-              >
-                
-               Novo Exercício
-              </div>
+               <ModalExercicio />
             </div>
           </div>
 
