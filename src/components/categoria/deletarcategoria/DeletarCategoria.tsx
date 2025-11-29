@@ -86,7 +86,7 @@ function DeletarCategoria() {
 
       <div className='border flex flex-col rounded-2xl overflow-hidden justify-between'>
         <header
-          className='py-2 px-6 bg-[#ffafcc] text-white font-bold text-2xl'>
+          className='py-2 px-6 bg-[#FF91E0] text font-bold text-2xl'>
           {/* Exibimos o NOME para que o usuário confirme o que será deletado. */}
           {categoria.nome} 
         </header>
@@ -96,15 +96,15 @@ function DeletarCategoria() {
 
         <div className="flex">
           <button
-            className='text-slate-100 bg-red-200 hover:bg-red-300 w-full py-2'
+            className='text bg-red-200 hover:bg-red-300 w-full py-2'
             onClick={retornar} // Usa a função que apenas redireciona (cancela a deleção).
           >
             Não
           </button>
 
           <button
-            className='w-full text-slate-100 bg-[#ffc8dd]
-                       hover:bg-[#ffafcc] flex items-center justify-center'
+            className='w-full text bg-[#ff91e0]
+                       hover:bg-[#f9f5ec] flex items-center justify-center'
             onClick={deletarCategoria} // Chama a função que faz a deleção.
             disabled={isLoading} // O botão fica desabilitado enquanto 'isLoading' for true.
           >
