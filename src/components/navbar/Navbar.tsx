@@ -12,7 +12,7 @@ function Navbar() {
                    
                     <div className='flex gap-4'> 
                         Home
-                       Categoria
+                       <Link to='/categoria' className='hover:underline'>Categoria</Link>
                         <Link to='/exercicios' className='hover:underline'>Exercicios</Link>
                         Perfil
                         Sobre Nós

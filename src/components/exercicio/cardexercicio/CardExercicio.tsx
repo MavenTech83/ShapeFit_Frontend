@@ -18,7 +18,7 @@ function CardExercicios({ exercicio }: CardExercicioProps) {
       <div className="flex">
         {/* Botão Editar */}
         <Link
-          to={`/editarExercicio/${exercicio.id}`}
+          to={`/editarexercicio/${exercicio.id}`}
           className="w-full text-slate-100 bg-indigo-400 hover:bg-indigo-800
           flex items-center justify-center py-2"
         >
@@ -27,7 +27,7 @@ function CardExercicios({ exercicio }: CardExercicioProps) {
 
         {/* Botão Deletar */}
         <Link
-          to={`/deletarExercicio/${exercicio.id}`}
+          to={`/deletarexercicio/${exercicio.id}`}
           className="text-slate-100 bg-red-400 hover:bg-red-700 w-full
           flex items-center justify-center py-2"
         >
