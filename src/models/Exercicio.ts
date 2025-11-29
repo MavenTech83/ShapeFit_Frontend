@@ -1,7 +1,10 @@
-import type Categoria from "./Categoria";
+import type Categoria from "./Categoria"; 
+
 export default interface Exercicio {
     id: number;
-    nome: string;
-    descricao: string;
-    exercicio: string | null;
+    nome: string; // Ex: "Agachamento Livre"
+    descricao: string; // Detalhe técnico do exercício
+    linkVideo?: string; 
+
+    categoria: Categoria; 
 }
