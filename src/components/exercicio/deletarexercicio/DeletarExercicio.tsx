@@ -28,14 +28,14 @@ function DeletarExercicio() {
   async function confirmarDelete() {
     try {
       await deletar(`/exercicios/${id}`);
-      ToastAlerta("Exercício deletado com sucesso!", "info");
+      ToastAlerta("Exercício deletado com sucesso!", 'error');
       navigate("/exercicios");
     } catch (error) {
       console.log("Erro ao deletar exercício:", error);
-      ToastAlerta("Erro ao deletar o exercício!", 'erro');
+      ToastAlerta("Erro ao deletar o exercício!", 'error');
     }
   }
-  
+
   return (
     <div className="container w-1/3 mx-auto">
       <h1 className="text-4xl text-center my-4">Deletar Exercício</h1>

@@ -92,7 +92,7 @@ function FormExercicio() {
             }
         } catch (error) {
             console.log("Erro ao salvar exercício", error);
-            ToastAlerta('Erro ao salvar exercício', 'erro');
+            ToastAlerta('Erro ao salvar exercício', 'error');
         }
 
         setIsLoading(false);
