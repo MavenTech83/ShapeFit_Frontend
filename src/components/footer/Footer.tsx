@@ -12,10 +12,11 @@ function Footer() {
                     <p className='text-xl font-bold'>
                         ShapeFit | Copyright: {data}
                     </p>
-                    <p className='text-lg'>Acesse nosso GitHub</p>
+                    <p className='text-lg'>Maven Tech Group - Acesse nosso GitHub</p>
                     <div className='flex gap-2'>
-
-                        <GithubLogoIcon size={48} weight='bold' />
+                        <a href="https://github.com/MavenTech83" target="blank">
+                            <GithubLogoIcon size={48} weight='bold' />
+                        </a>
                     </div>
                 </div>
             </div>
