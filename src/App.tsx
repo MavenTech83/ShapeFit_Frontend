@@ -28,7 +28,7 @@ function App() {
               <Route path="/cadastrarcategoria" element={<FormCategoria />} />
               <Route path="/editarcategoria/:id" element={<FormCategoria />} />
               <Route path="/deletarcategoria/:id" element={<DeletarCategoria />} />
-              <Route path="/postagens" element={<ListaExercicios />} />
+              <Route path="/exercicios" element={<ListaExercicios />} />
               <Route path="/cadastrarexercicio" element={<FormExercicio />} />
               <Route path="/editarexercicio/:id" element={<FormExercicio />} />
               <Route path="/deletarexercicio/:id" element={<DeletarExercicio />} />
