@@ -18,13 +18,14 @@ function App() {
 
   return (
     <>
-        <ToastContainer />
+        
         <BrowserRouter>
           <Navbar />
+          <ToastContainer />
           <div className="min-h-[80vh] ">
             <Routes>
               <Route path="/home" element={<Home />} />
-              <Route path="/categorias" element={<ListaCategorias />} />
+              <Route path="/categoria" element={<ListaCategorias />} />
               <Route path="/cadastrarcategoria" element={<FormCategoria />} />
               <Route path="/editarcategoria/:id" element={<FormCategoria />} />
               <Route path="/deletarcategoria/:id" element={<DeletarCategoria />} />
