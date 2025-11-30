@@ -18,9 +18,10 @@ function App() {
 
   return (
     <>
-        <ToastContainer />
+        
         <BrowserRouter>
           <Navbar />
+          <ToastContainer />
           <div className="min-h-[80vh] ">
             <Routes>
               <Route path="/home" element={<Home />} />

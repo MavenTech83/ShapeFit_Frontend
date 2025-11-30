@@ -11,7 +11,7 @@ function DeletarExercicio() {
 
   const [exercicio, setExercicio] = useState<Exercicio | null>(null);
 
-  // Buscar exercício pelo ID
+   // Buscar exercício pelo ID
   async function buscarExercicio(id: string) {
     try {
       await buscar(`/exercicios/${id}`, (data: Exercicio) => setExercicio(data));
@@ -28,11 +28,11 @@ function DeletarExercicio() {
   async function confirmarDelete() {
     try {
       await deletar(`/exercicios/${id}`);
-      ToastAlerta("Exercício deletado com sucesso!", 'error');
+      ToastAlerta("Exercício deletado com sucesso!", 'erro');
       navigate("/exercicios");
     } catch (error) {
       console.log("Erro ao deletar exercício:", error);
-      ToastAlerta("Erro ao deletar o exercício!", 'error');
+      ToastAlerta("Erro ao deletar o exercício!", 'erro');
     }
   }
 

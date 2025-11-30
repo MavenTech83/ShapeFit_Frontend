@@ -23,11 +23,10 @@ function ListaExercicios() {
     }, []);
 
     useEffect(() => {
-        if (!isLoading && exercicios.length === 0) {
-            ToastAlerta("Nenhum exercício encontrado!", "info");
-        }
-    }, [isLoading, exercicios]);
-
+    if (!isLoading && exercicios.length === 0) {
+       /* ToastAlerta("Nenhum exercício encontrado!", 'info');*/
+    }
+}, [isLoading, exercicios]);
     return (
         <div className="flex justify-center w-full my-4">
             <div className="container flex flex-col mx-2">
@@ -36,12 +35,6 @@ function ListaExercicios() {
                     <div className="flex justify-center text-5xl animate-bounce my-8">
                         🏋🏽‍♀️
                     </div>
-                )}
-
-                {!isLoading && exercicios.length === 0 && (
-                    <p className="text-center text-2xl my-6">
-                        Nenhum exercício encontrado!
-                    </p>
                 )}
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
