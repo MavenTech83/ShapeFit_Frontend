@@ -4,46 +4,48 @@ function About() {
   const desenvolvedoras = [
     {
       id: 1,
-      nome: "Ana Carolina",
-      foto: "",
-      descricao: "se descreva aqui gata",
-      linkedin: "https://linkedin.com/in/",
-      github: "https://github.com/perfil1"
+      nome: "Ana Lemos",
+      foto: "https://i.imgur.com/pSbJzUC.jpeg",
+      descricao: "Dev",
+      linkedin: "https://www.linkedin.com/in/analemos-3nj0y/",
+      github: "https://github.com/carol1692"
     },
     {
       id: 2,
       nome: "Jéssica Tinguely",
-      foto: "",
-      descricao: "Descrição da Gata",
-      linkedin: "https://linkedin.com/in/",
-      github: "https://github.com/perfil2"
+      foto: "https://i.imgur.com/89PgWiM.jpeg",
+      descricao: "Dev",
+      linkedin: "https://www.linkedin.com/in/jessicatinguely/",
+      github: "https://github.com/jessicatinguely"
     },
     {
       id: 3,
-      nome: "Letícia",
-      foto: "",
-      descricao: "Descrição da Gata",
-      linkedin: "https://linkedin.com/in/",
-      github: "https://github.com/"
+      nome: "Letícia Campos",
+      foto: "https://i.imgur.com/qAHNKrs.jpeg",
+      descricao: "QA | Documentação",
+      linkedin: "https://www.linkedin.com/in/leticiafccampos/?locale=pt",
+      github: "https://github.com/lefcc"
     },
      {
       id: 4,
-      nome: "Nádia",
-      foto: "",
-      descricao: "Descrição da Gata",
-      linkedin: "https://linkedin.com/in/",
-      github: "https://github.com/"
+      nome: "Nádia Caricatto",
+      foto: "https://i.imgur.com/PBPngga.jpeg",
+      descricao: "Dev",
+      linkedin: "https://www.linkedin.com/in/nadiacaricatto/",
+      github: "https://github.com/nadiacaricatto"
     },
      {
       id: 5,
-      nome: "Thalita",
-      foto: "",
-      descricao: "Descrição da Gata",
-      linkedin: "https://linkedin.com/in/",
-      github: "https://github.com/"
+      nome: "Thalita Lima",
+      foto: "https://i.imgur.com/ONYV61m.jpeg",
+      descricao: "Tech Lead",
+      linkedin: "https://www.linkedin.com/in/thalita-lima-/",
+      github: "https://github.com/Thalima23"
     }
     // Adicione quantas devs forem necessárias
   ]
+
+
 
   return (
     <>
@@ -51,11 +53,13 @@ function About() {
         <div className='container text-white'>
           {/* Header */}
           <div className="text-center mb-12">
+            <p className='text-base font-semibold mb-4'>
+            QUEM SÃO </p>
             <h2 className='text-5xl font-bold mb-4'>
-              Sobre Nós
+            AS DEVS
             </h2>
-            <p className='text-xl'>
-              Conheça as Devas que idealizaram o ShapeFit!
+            <p className='text-base font-semibold'>
+              QUE IDEALIZARAM O SHAPEFIT
             </p>
           </div>
 
@@ -72,7 +76,7 @@ function About() {
                   className="w-32 h-32 rounded-full object-cover border-4 border-white"
                 />
                 <h3 className="text-2xl font-bold">{dev.nome}</h3>
-                <p className="text-center text-sm">{dev.descricao}</p>
+                <p className="text-center font-semibold text-lg">{dev.descricao}</p>
                 
                 {/* Links das Gatas */}
                 <div className="flex gap-4 mt-2">
@@ -82,7 +86,7 @@ function About() {
                     rel="noopener noreferrer"
                     className="bg-white text-violet-700 px-4 py-2 rounded-lg font-semibold hover:bg-violet-100 transition"
                   >
-                    LinkedIn
+                    Linkedin
                   </a>
                   <a 
                     href={dev.github}
