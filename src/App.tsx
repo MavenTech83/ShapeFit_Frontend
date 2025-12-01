@@ -11,8 +11,10 @@ import FormExercicio from "./components/exercicio/formexercicio/FormExercicio";
 import DeletarExercicio from "./components/exercicio/deletarexercicio/DeletarExercicio";
 import { ToastContainer } from "react-toastify"
 import 'react-toastify/dist/ReactToastify.css';
-import Perfil from "./pages/perfil/perfil";
 import AtualizarPerfil from "./pages/perfil/AtualizarPerfil";
+import About from "./pages/sobrenos/SobreNos";
+import Perfil from "./pages/perfil/perfil";
+import UsuarioLogin from "./pages/login/UsuarioLogin";
 
 function App() {
 
@@ -35,6 +37,9 @@ function App() {
               <Route path="/deletarexercicio/:id" element={<DeletarExercicio />} />
               <Route path="/perfil" element={<Perfil />} />
               <Route path="/atualizarusuario" element={<AtualizarPerfil />} />
+              <Route path="/about" element={<About/>}/>
+              <Route path="/perfil" element={<Perfil/>} />
+              <Route path="/usuarioLogin" element={<UsuarioLogin/>} />
             </Routes>
           </div>
           <Footer />
