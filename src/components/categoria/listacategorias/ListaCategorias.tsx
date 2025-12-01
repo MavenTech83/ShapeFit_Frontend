@@ -50,7 +50,7 @@ function ListaCategorias() {
       {
         // Renderização Condicional: Se isLoading for true, exibe o loader.
         isLoading && ( 
-          <div className="flex justify-center w-full my-8">
+          <div className="flex justify-center w-full">
             <SyncLoader
               color="#FFAFCC"
               size={32}
@@ -58,12 +58,12 @@ function ListaCategorias() {
           </div>
         )
       }
-      <div className="flex justify-center w-full my-4">
+      <div className="flex justify-center w-full ">
         <div className="container flex flex-col">
           {
             // Renderização Condicional: Se não estiver carregando E a lista estiver vazia.
             (!isLoading && categorias.length === 0) && ( 
-              <span className="text-3xl text-center my-8">
+              <span className="text-3xl text-center">
                 Nenhuma categoria foi encontrada.
               </span> 
             )

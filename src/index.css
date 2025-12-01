@@ -1,1 +1,15 @@
 @import "tailwindcss";
+
+:root{
+    --purple-seduction: #b060db;
+    --solarized: #FBCF4F;
+    --harmoniousRose: #F29CB7;
+    --testosterose:#DDAAFF;
+    --charcoal: #222023;
+    --rosarian: #FAEADD;
+
+    --cor1: #7a10ff;
+    --cor2: #e72aa4;
+    --cor3: #ffcc00;
+    --cor4: #ffffff;
+}
