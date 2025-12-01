@@ -28,11 +28,11 @@ function ListaExercicios() {
     }
 }, [isLoading, exercicios]);
     return (
-        <div className="flex justify-center w-full my-4">
+        <div className="flex justify-center w-full">
             <div className="container flex flex-col mx-2">
 
                 {isLoading && (
-                    <div className="flex justify-center text-5xl animate-bounce my-8">
+                    <div className="flex justify-center text-5xl animate-bounce">
                         🏋🏽‍♀️
                     </div>
                 )}
