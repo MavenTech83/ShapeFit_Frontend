@@ -9,6 +9,7 @@ import { SyncLoader } from "react-spinners";
 import type Categoria from "../../../models/Categoria";
 // Função para exibir notificações.
 import { ToastAlerta } from "../../../utils/ToastAlerta";
+import ModalCategoria from "../modalcategoria/ModalCategoria";
 
 function ListaCategorias() {
 
@@ -47,8 +48,12 @@ function ListaCategorias() {
 
   return (
     <>
+      {/* ✅ ADICIONA O BOTÃO DO MODAL AQUI */}
+      <div className="container flex justify-end mx-auto my-4">
+        <ModalCategoria />
+      </div>
+
       {
-        // Renderização Condicional: Se isLoading for true, exibe o loader.
         isLoading && ( 
           <div className="flex justify-center w-full my-8">
             <SyncLoader
