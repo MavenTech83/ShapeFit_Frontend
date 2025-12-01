@@ -26,7 +26,7 @@ function App() {
           <ToastContainer />
           <div className="min-h-[80vh] bg-linear-to-b from-purple-600 via-purple-500 to-pink-600 ">
             <Routes>
-              <Route path="/home" element={<Home />} />
+              <Route path="/" element={<Home />} />
               <Route path="/categoria" element={<ListaCategorias />} />
               <Route path="/cadastrarcategoria" element={<FormCategoria />} />
               <Route path="/editarcategoria/:id" element={<FormCategoria />} />

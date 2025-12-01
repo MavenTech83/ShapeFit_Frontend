@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Permanent+Marker&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Hand:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=WDXL+Lubrifont+TC&display=swap');
 @import "tailwindcss";
 
 :root{
-    --purple-seduction: #b060db;
+    --purple-seduction:#522a6f;
     --solarized: #FBCF4F;
     --harmoniousRose: #F29CB7;
     --testosterose:#DDAAFF;
@@ -12,4 +16,33 @@
     --cor2: #e72aa4;
     --cor3: #ffcc00;
     --cor4: #ffffff;
+}
+
+/* Google Fonts  */
+
+/* fonte body */
+.comfortaa-body {
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+/* fonte Logo */
+.permanent-marker-regular {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.edu-qld-hand-body {
+  font-family: "Edu QLD Hand", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.wdxl-lubrifont-tc-regular {
+  font-family: "WDXL Lubrifont TC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }

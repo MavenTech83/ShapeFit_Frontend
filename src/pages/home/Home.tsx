@@ -1,3 +1,4 @@
+import ModalCategoria from "../../components/categoria/modalcategoria/ModalCategoria"
 import ModalExercicio from "../../components/exercicio/modalexercicio/ModalExercicio"
 
 function Home() {
@@ -17,6 +18,7 @@ function Home() {
 
             <div className='flex justify-around gap-4'>
                <ModalExercicio />
+               <ModalCategoria />
             </div>
           </div>
           {/* coluna 2 */}
@@ -29,7 +31,7 @@ function Home() {
             <img
               src="https://ik.imagekit.io/hnkqnvn7cu/ShapeFit.gif"
               alt="Imagem Página Home"
-              className='w-auto h-[70vh] rounded-md'/>
+              className='w-auto h-[60vh] p-2 rounded-md'/>
 
           </div>
         </div>

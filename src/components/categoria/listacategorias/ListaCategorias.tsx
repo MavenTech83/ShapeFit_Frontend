@@ -50,12 +50,11 @@ function ListaCategorias() {
       {
         // Renderização Condicional: Se isLoading for true, exibe o loader.
         isLoading && ( 
-          <div className="flex justify-center w-full">
-            <SyncLoader
-              color="#FFAFCC"
-              size={32}
-            />
-          </div>
+          
+            <div className="flex justify-center text-5xl animate-bounce">
+                        🏋🏽‍♀️
+            </div>
+          
         )
       }
       <div className="flex justify-center w-full ">
@@ -83,6 +82,7 @@ function ListaCategorias() {
           </div>
         </div>
       </div>
+     
     </>
   )
 }

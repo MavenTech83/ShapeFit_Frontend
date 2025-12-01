@@ -15,6 +15,7 @@ function CardExercicios({ exercicio }: CardExercicioProps) {
       </header>
 
       <p className="p-8 text-xl bg-[#F9F5ec] text h-full">{exercicio.descricao}</p>
+      {/* <p className="p-8 text-xl bg-[#F9F5ec] text h-full">{exercicio.categoria.nome}</p> */}
 
       <div className="flex">
         {/* Botão Editar */}

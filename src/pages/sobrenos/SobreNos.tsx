@@ -4,43 +4,43 @@ function About() {
   const desenvolvedoras = [
     {
       id: 1,
-      nome: "Ana Carolina",
-      foto: "",
-      descricao: "se descreva aqui gata",
-      linkedin: "https://linkedin.com/in/",
-      github: "https://github.com/perfil1"
+      nome: "Ana Lemos",
+      foto: "https://i.imgur.com/pSbJzUC.jpeg",
+      descricao: "Dev",
+      linkedin: "https://www.linkedin.com/in/analemos-3nj0y/",
+      github: "https://github.com/carol1692"
     },
     {
       id: 2,
       nome: "Jéssica Tinguely",
-      foto: "",
-      descricao: "Descrição da Gata",
-      linkedin: "https://linkedin.com/in/",
-      github: "https://github.com/perfil2"
+      foto: "https://i.imgur.com/89PgWiM.jpeg",
+      descricao: "Dev",
+      linkedin: "https://www.linkedin.com/in/jessicatinguely/",
+      github: "https://github.com/jessicatinguely"
     },
     {
       id: 3,
-      nome: "Letícia",
-      foto: "",
-      descricao: "Descrição da Gata",
-      linkedin: "https://linkedin.com/in/",
-      github: "https://github.com/"
+      nome: "Letícia Campos",
+      foto: "https://i.imgur.com/qAHNKrs.jpeg",
+      descricao: "QA | Documentação",
+      linkedin: "https://www.linkedin.com/in/leticiafccampos/?locale=pt",
+      github: "https://github.com/lefcc"
     },
      {
-      id: 4,
-      nome: "Nádia",
-      foto: "",
-      descricao: "Descrição da Gata",
-      linkedin: "https://linkedin.com/in/",
-      github: "https://github.com/"
+     id: 4,
+      nome: "Nádia Caricatto",
+      foto: "https://i.imgur.com/PBPngga.jpeg",
+      descricao: "Dev",
+      linkedin: "https://www.linkedin.com/in/nadiacaricatto/",
+      github: "https://github.com/nadiacaricatto"
     },
-     {
-      id: 5,
-      nome: "Thalita",
-      foto: "",
-      descricao: "Descrição da Gata",
-      linkedin: "https://linkedin.com/in/",
-      github: "https://github.com/"
+    {
+     id: 5,
+      nome: "Thalita Lima",
+      foto: "https://i.imgur.com/ONYV61m.jpeg",
+      descricao: "Tech Lead",
+      linkedin: "https://www.linkedin.com/in/thalita-lima-/",
+      github: "https://github.com/Thalima23"
     }
     // Adicione quantas devs forem necessárias
   ]

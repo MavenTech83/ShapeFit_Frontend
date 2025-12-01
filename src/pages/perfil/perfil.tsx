@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom"
 import type Exercicio from "../../models/Exercicio"
 import type Categoria from "../../models/Categoria"
 import { buscar } from "../../services/Service"
+import { ToastAlerta } from "../../utils/ToastAlerta"
 
 function Perfil() {
     const navigate = useNavigate()
@@ -19,7 +20,7 @@ function Perfil() {
         try {
             await buscar("/categorias", setCategorias)
         } catch (error) {
-            console.error("Ops... Houve um erro ao exibir as categorias! Tente novamente.")
+            ToastAlerta("Ops... Houve um erro ao exibir as categorias! Tente novamente.","erro")
         }
     }
 
@@ -27,7 +28,7 @@ function Perfil() {
         try {
             await buscar("/exercicios", setExercicios)
         } catch (error) {
-            console.error("Ops... Houve um erro ao exibir os exercícios! Tente novamente.")
+            ToastAlerta("Ops... Houve um erro ao exibir os exercícios! Tente novamente.","erro")
         }
     }
 
@@ -47,7 +48,7 @@ function Perfil() {
         )
 
         if (exerciciosDaCategoria.length === 0) {
-            alert("Ops... Nenhum exercício foi encontrado nesta categoria!")
+            ToastAlerta("Ops... Nenhum exercício foi encontrado nesta categoria!", "erro")
             return 
         }
         

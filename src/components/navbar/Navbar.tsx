@@ -8,10 +8,10 @@ function Navbar() {
                 
 
                 <div className="container flex justify-between text-lg mx-8">
-                   <Link to='/home' className="text-2xl font-bold">ShapeFit</Link>
+                   <Link to='/' className="text-2xl font-bold">ShapeFit</Link>
                     <div className='flex gap-4'> 
-                        <Link to='/home' className='hover:underline'>Home</Link>
-                       <Link to='/categoria' className='hover:underline'>Categoria</Link>
+                        <Link to='/' className='hover:underline'>Home</Link>
+                        <Link to='/categoria' className='hover:underline'>Categoria</Link>
                         <Link to='/exercicios' className='hover:underline'>Exercicios</Link>
                         <Link to='/perfil' className='hover:underline'>Perfil</Link>
                         <Link to='/about' className='hover:underline'>Sobre Nós</Link>
