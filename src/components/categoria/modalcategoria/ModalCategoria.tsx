@@ -1,17 +1,17 @@
 import Popup from 'reactjs-popup';
 
 import 'reactjs-popup/dist/index.css';
-import FormExercicio from '../formexercicio/FormExercicio';
+import FormExercicio from '../formcategoria/FormCategoria'
 
 
-function ModalExercicio() {
+function ModalCategoria() {
     return (
         <>
             <Popup
                 trigger={
                     <button
                         className='border-3 rounded px-4 py-2 hover:bg-white hover:text-pink-400 font-bold'>
-                       Novo Exercício
+                       Nova Categoria
                     </button>
                 }
                 modal
@@ -26,4 +26,4 @@ function ModalExercicio() {
     );
 }
 
-export default ModalExercicio;
+export default ModalCategoria;
