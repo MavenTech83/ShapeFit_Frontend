@@ -14,8 +14,8 @@ function Navbar() {
                         <Link to='/home' className='hover:underline'>Home</Link>
                        <Link to='/categoria' className='hover:underline'>Categoria</Link>
                         <Link to='/exercicios' className='hover:underline'>Exercicios</Link>
-                        Perfil
-                        Sobre Nós
+                        <Link to='/perfil' className='hover:underline'>Perfil</Link>
+                        <Link to='/about' className='hover:underline'>Sobre Nós</Link>
                     </div>
                 </div>
             </div>
