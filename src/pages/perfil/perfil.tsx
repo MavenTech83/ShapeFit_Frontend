@@ -84,7 +84,7 @@ function Perfil() {
 
     if (loading) {
         return (
-            <div className="bg-violet-700 flex justify-center items-center min-h-screen">
+            <div className="flex justify-center items-center min-h-screen">
                 <p className="text-white text-2xl">Carregando...</p>
             </div>
         )
@@ -92,7 +92,7 @@ function Perfil() {
 
     return (
         <>
-            <div className="bg-violet-700 flex justify-center min-h-screen py-8">
+            <div className="flex justify-center min-h-screen py-8">
                 <div className='container grid grid-cols-2 text-white gap-8'>
                     <div className="flex flex-col gap-4 items-center justify-start py-4">
                         <h2 className='text-5xl font-bold'>

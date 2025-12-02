@@ -47,7 +47,7 @@ function About() {
 
   return (
     <>
-      <div className="bg-violet-700 flex justify-center min-h-screen py-8">
+      <div className="flex justify-center min-h-screen py-8">
         <div className='container text-white'>
           {/* Header */}
           <div className="text-center mb-12">
